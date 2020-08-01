@@ -5,10 +5,10 @@ const UserSchema = new mongoose.Schema({
         type: String
     },
     email: {
-        tyle: String
+        type: String
     },
     identityCard:{
-        tyme:Number
+        type:Number
     }
 });
 module.exports= User = mongoose.model("user",UserSchema);

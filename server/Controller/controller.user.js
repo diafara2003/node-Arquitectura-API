@@ -23,9 +23,9 @@ ControllerUser.Save = (name, email, identityCard) => {
     try {
 
         const user = new User({
-            name,
-            email,
-            identityCard
+            name:name,
+            email:email,
+            identityCard:identityCard
         });
 
         user.save();

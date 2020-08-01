@@ -29,7 +29,7 @@ router.get('/:userid', async (req, res) => {
 router.post('/', (req, res) => {
 
     const { name, email, identityCard } = req.body;
-    //console.log("name is " + identityCard);
+    console.log("name is " + identityCard);
     const result =  UserController.Save(name, email, identityCard);
 
     res.json({ message: result});
